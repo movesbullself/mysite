@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Channel Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://vk.com/movesbull?z=photo-238363548_457239108%2Falbum-238363548_310989881%2Frev:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 <style>
 *{
     margin:0;
@@ -24,6 +24,7 @@ body{
     position:fixed;
     inset:0;
     background:
+	
         radial-gradient(circle at top left, rgba(80,80,80,0.18), transparent 30%),
         radial-gradient(circle at bottom right, rgba(255,255,255,0.05), transparent 25%),
         linear-gradient(to bottom,#0a0a0a,#111);
@@ -44,13 +45,18 @@ body{
     align-items:flex-end;
     padding:60px;
     position:relative;
+    background-image: url('https://vk.com/movesbull?z=photo-238363548_457239108%2Falbum-238363548_310989881%2Frev');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .hero::before{
     content:"";
     position:absolute;
     inset:0;
-    background:linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.25));
+    background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.4));
+    z-index: 1;
 }
 
 .hero-content{
@@ -218,7 +224,7 @@ iframe{
 <header class="hero">
     <div class="hero-content">
         <div class="tag">DIGITAL ARCHIVE</div>
-        <h1>YOUR<br>CHANNEL</h1>
+        <h1>MOVESBULL<br></h1>
         <p class="description">
             Пространство для видео, мыслей и визуальных проектов.
             Минималистичный атмосферный сайт в стиле личного цифрового архива.
@@ -228,15 +234,15 @@ iframe{
 
 <nav>
     <div class="nav-inner">
-        <a href="#videos">VIDEOS</a>
-        <a href="#featured">FEATURED</a>
-        <a href="#archive">ARCHIVE</a>
-        <a href="#about">ABOUT</a>
+        <a href="#videos">ВИДЕО</a>
+        <a href="#featured">РЕКОМЕНДАЦИИ</a>
+        <a href="#archive">АРХИВ</a>
+        <a href="#about">ОБО МНЕ</a>
     </div>
 </nav>
 
 <section class="section" id="videos">
-    <div class="section-title">LATEST VIDEOS</div>
+    <div class="section-title">ПОСЛЕДНИЕ ВИДЕО</div>
 
     <div class="video-grid">
 
